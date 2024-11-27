@@ -1,4 +1,4 @@
 nasm -f win64 CompDist.asm
-gcc -c main.c -o main.obj -std=c11 -m64
-gcc main.obj CompDist.obj -o main.exe -m64
-main.exe
+gcc -c test.c -o test.obj -std=c11 -m64
+gcc test.obj CompDist.obj -o test.exe -m64
+test.exe
