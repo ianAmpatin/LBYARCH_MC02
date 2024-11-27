@@ -166,9 +166,9 @@ C_ASM.exe < test_input.txt > output.txt
 ```
 
 ### C Kernel Check
-Content of `output.txt` after Execution with `call_c_kernel`
-!["Image of output.txt After Executing the Batch File"](Images\CC_CKERNEL.png)
+Content of `output.txt` after Execution with `call_c_kernel` <br/>
+!["Image of output.txt After Executing the Batch File"](Images/CC_CKERNEL.png)
 
 ### ASM Kernel Check
-Content of `output.txt` after Execution with `CompDist`
-!["Image of output.txt After Executing the Batch File"](Images\CC_ASMKERNEL.png)
+Content of `output.txt` after Execution with `CompDist` <br/>
+![Image of output.txt After Executing the Batch File](Images/CC_ASMKERNEL.png)
