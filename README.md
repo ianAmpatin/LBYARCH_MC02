@@ -78,7 +78,7 @@ ASM Kernel Execution Time Average: `0.0025`
 C Kernel Execution Time Average: `0.231566667`	 <br/>
 ASM Kernel Execution Time Average: `0.0634`
 
-### Execution Time when Vector Size is 2<sup>30
+### Execution Time when Vector Size is 2<sup>26
 
 | C Kernel Execution Time   | ASM Kernel Execution Time |
 |:--------------------------|:--------------------------|
@@ -118,7 +118,7 @@ C Kernel Execution Time Average: `0.8677`<br/>
 ASM Kernel Execution Time Average: `0.2188`
 
 ### Analysis
-Benchmarking the C Kernel and the ASM Kernel showed us that the ASM Kernal had a significantly faster execution time. The C Kernel had an average execution time of `0.007933333`, `0.231566667` and `0.8677` for vectors sizes 2<sup> 20</sup>, 2 <sup> 24 </sup> and 2 <sup> 28 </sup>, respectively. Meanwhile the ASM Kernal had an averate execution time of `0.0025`, `0.0634`, and `0.2188` for vector sizes 2<sup> 20</sup>, 2 <sup> 24 </sup> and 2 <sup> 28 </sup>, respectively. With these results, we can state that the ASM Kernel is significanlty faster and more efficient.
+Benchmarking the C Kernel and the ASM Kernel showed us that the ASM Kernal had a significantly faster execution time. The C Kernel had an average execution time of `0.007933333`, `0.231566667` and `0.8677` for vectors sizes 2<sup> 20</sup>, 2 <sup> 24 </sup> and 2 <sup> 26 </sup>, respectively. Meanwhile the ASM Kernal had an averate execution time of `0.0025`, `0.0634`, and `0.2188` for vector sizes 2<sup> 20</sup>, 2 <sup> 24 </sup> and 2 <sup> 26 </sup>, respectively. With these results, we can state that the ASM Kernel is significanlty faster and more efficient.
 
 ## Corectness Check
 ### Test Cases for Correctness Check

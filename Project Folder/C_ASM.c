@@ -44,13 +44,16 @@ int main()
         printf("%.12lf\n", time);
     }
     */
+
     call_c_kernel(x1, x2, y1, y2, z1, size);
     CompDist(x1, x2, y1, y2, z2, size);
-    printf("\nPrinting Results...\n");
+    printf("\nPrinting Results...\n\n");
     for (int i = 0; i < 10; i++)
     {
+        
 	    if (z1[i] == z2[i])
         {
+            printf("X1[%lf] X2[%lf] Y1[%lf] Y2[%lf]\n", x1[i], x2[i], y1[i], y2[i]);
             printf("C Kernel Output: %lf\n", z1[i]);
             printf("ASM Kernel Output: %lf\n\n", z2[i]);
         }
