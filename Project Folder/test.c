@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-extern void CompDist(double* z, double* x1, double* x2, double* y1, double* y2, int size);
+extern void CompDist(double* x1, double* x2, double* y1, double* y2, double* z, int size);
 
 int main()
 {
@@ -23,12 +23,12 @@ int main()
     y2[1] = 2.5;
 
     printf("Performing Computations...\n");
-    CompDist(z, x1, x2, y1, y2, size);
+    CompDist(x1, x2, y1, y2, z, size);
 
     printf("\nPrinting...\n");
     for (int i = 0; i < size; i++)
     {
-	    printf("[%d]: %.6lf", i, z[i]);
+	    printf("[%d]: %.8lf", i, z[i]);
 
         if (i != (size - 1))
         {
