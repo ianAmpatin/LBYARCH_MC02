@@ -9,7 +9,7 @@ int main()
 {
     printf("Getting Pair Count...\n\n");
 	int size, runs;
-    runs = 1;
+    runs = 30;
     scanf("%d", &size);
     double* x1 = (double*) malloc (size * sizeof(double));
 	double* x2 = (double*) malloc (size * sizeof(double));
