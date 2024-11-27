@@ -156,9 +156,8 @@ Benchmarking the C Kernel and the ASM Kernel showed us that the ASM Kernal had a
 |9.7707707782095700	    |-6.1560815389430800	|-5.4157454945072500	|-7.7724294225372300	|16.1002665775765000    |
 |26.6394374936000000	|-4.4791803708808700	|3.5412500658210400	    |-5.5205327180223200	|32.4111753106417000    |
 
-
-### C Kernel Check
-
+### Batch File Content
+Batch File Content
 ```
 nasm -f win64 CompDist.asm
 gcc -c C_ASM.c -o C_ASM.obj -std=c11 -m64
@@ -166,4 +165,10 @@ gcc C_ASM.obj CompDist.obj -o C_ASM.exe -m64
 C_ASM.exe < test_input.txt > output.txt
 ```
 
+### C Kernel Check
+Content of `output.txt` after Execution with `call_c_kernel`
+!["Image of output.txt After Executing the Batch File"](Images\CC_CKERNEL.png)
+
 ### ASM Kernel Check
+Content of `output.txt` after Execution with `CompDist`
+!["Image of output.txt After Executing the Batch File"](Images\CC_ASMKERNEL.png)

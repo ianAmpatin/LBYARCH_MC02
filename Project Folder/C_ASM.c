@@ -20,8 +20,8 @@ int main()
     for (int i = 0; i < size; i++)
     {
         scanf("%lf", &x1[i]);
-        scanf("%lf", &y1[i]);
         scanf("%lf", &x2[i]);
+        scanf("%lf", &y1[i]);
         scanf("%lf", &y2[i]);
     }
 
@@ -44,16 +44,11 @@ int main()
         printf("%.12lf\n", time);
     }
     */
-    call_c_kernel(x1, x2, y1, y2, z1, size);
+    CompDist(x1, x2, y1, y2, z1, size);
     printf("\nPrinting Results...\n");
     for (int i = 0; i < 10; i++)
     {
-	    printf("[%d]: %.8lf\n", i, z1[i]);
-
-        if (i != (size - 1))
-        {
-            printf(", ");
-        }
+	    printf("[%d]: %lf\n", i, z1[i]);
     }
     printf("\nEnd");
     return 0;
