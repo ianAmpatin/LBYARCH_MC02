@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "time.h": "c",
+        "c_functions.h": "c"
+    }
+}
