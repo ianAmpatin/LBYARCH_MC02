@@ -29,7 +29,7 @@ void input_vector(double* vector, int* size, FILE* file){
     printf("\nReached here\n");
 }*/
 
-void input_vectors(double* x1, double* x2, double* y1, double* y2, double* z, int* size, const char* filename){
+void input_vectors(double* x1, double* x2, double* y1, double* y2, int* size, const char* filename){
 
     FILE* file = fopen(filename, "r");
     if (!file)
@@ -43,6 +43,7 @@ void input_vectors(double* x1, double* x2, double* y1, double* y2, double* z, in
     }
 
     fscanf(file, "%d", size);
+    printf("%d\n",*size);
 
     for (int i = 0; i < *size; i++){
         fscanf(file, "%lf", &x1[i]);  
@@ -65,7 +66,13 @@ void input_vectors(double* x1, double* x2, double* y1, double* y2, double* z, in
     
 void print_vector(double* vector, int size){
     for (int i = 0; i < size; i++){
-        printf("%lf\n", vector[i] );
+        printf("%.2lf\n", vector[i] );
+    }
+}
+
+void print_vector_pair(double* vector1, double* vector2, int size){
+    for (int i = 0; i < size; i++){
+        printf("%.2lf\t%.2lf\n", vector1[i], vector2[i] );
     }
 }
 
