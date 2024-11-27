@@ -22,7 +22,7 @@ int main(){
     input_vectors(x1, x2, y1, y2, &size, filename);
     
     call_c_kernel(x1, x2, y1, y2, z1, size);
-    call_c_kernel(x1, x2, y1, y2, z2, size);
+    CompDist(x1, x2, y1, y2, z2, size);
     print_vector_pair(z1,z2,size);
     
     return 0;
