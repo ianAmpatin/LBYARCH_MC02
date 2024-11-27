@@ -10,7 +10,7 @@ int main()
     printf("Getting Pair Count...\n\n");
 	int size, runs;
     runs = 1;
-    scanf("%f", &size);
+    scanf("%d", &size);
     double* x1 = (double*) malloc (size * sizeof(double));
 	double* x2 = (double*) malloc (size * sizeof(double));
 	double* y1 = (double*) malloc (size * sizeof(double));
@@ -22,10 +22,10 @@ int main()
 
     for (int i = 0; i < size; i++)
     {
-        scanf("%lf ", &x1[i]);
-        scanf("%lf ", &x2[i]);
-        scanf("%lf ", &y1[i]);
-        scanf("%lf ", &y2[i]);
+        scanf("%lf", &x1[i]);
+        scanf("%lf", &x2[i]);
+        scanf("%lf", &y1[i]);
+        scanf("%lf", &y2[i]);
     }
 
     printf("Starting...\n\n");
