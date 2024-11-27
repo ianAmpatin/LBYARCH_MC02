@@ -1,12 +1,8 @@
 section .data
-Y2_VECTOR DQ 0
-Y2_OFFSET DQ 0
 VECTOR_SIZE DQ 0
-
 DIFFERENCE_X DQ 0
 DIFFERENCE_Y DQ 0
 
-DEF_VAL DQ 3.0
 section .text
 bits 64
 default rel
